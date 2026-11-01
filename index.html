@@ -1,65 +1,122 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project</title>
+    <meta name="theme-color" content="#ffffff">
+    <meta name="description" content="Discover the latest fashion collections and best sellers at MEJIWOO.">
+    <title>MEJIWOO | Fashion Collections</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="navdiv">
-        <div class="navbar">
-           <h4>Home</h4>
-           <h4>Product</h4>
-           <h4>Categories</h4>
-           <h4>SALE</h4>
+
+    <header class="header">
+        <div class="navdiv">
+            <nav class="navbar" aria-label="Main navigation">
+                <a href="#home">Home</a>
+                <a href="#products">Product</a>
+                <a href="#collections">Categories</a>
+                <a href="#bestsellers" class="sale-link">SALE</a>
+            </nav>
+
+            <a href="#home" class="logo" aria-label="MEJIWOO home">
+                MEJIWOO
+            </a>
+
+            <a href="#bestsellers" class="shop-link">Shop Now</a>
         </div>
-        <div>
-          <h3>MEJIWOO</h3>
-        </div>
-    </div>
-    <div class="banner">
-        <img src="Images/Banner.png" alt="banner">
-    </div>
-    <div>
-        <h1>
-            Season Collections
-        </h1>
-    </div>
-    <div class="Products">
-    <img src="Images/Spring.png" alt="Spring">
-    <img src="Images/Summer.png" alt="Summer">
-    <img src="Images/winter.png" alt="Winter">
-    </div>
-    <div class="Productdetails">
-        <h4>SPRING</h4>
-        <h4>SUMMER</h4>
-        <h4>WINTER</h4>
-    </div>
-    <div class="morebtn">
-        <button>MORE</button>
-        <button>MORE</button>
-        <button>MORE</button>
-    </div>
-    <div>
-        <h1>
-           Our Best Seller
-        </h1>
-    </div>
-    <div class="Products">
-    <img src="Images/product_01.png" alt="Product1">
-    <img src="Images/product_02.png" alt="Product2">
-    <img src="Images/winter.png" alt="Product3">
-    </div>
-    <div class="Productdetails">
-        <p>Euphoria Crop Blouse</p>
-        <p>Venus Halter Dress</p>
-        <p>Snap Pure Blouse</p>
-    </div>
-    <div class="price">
-       <p>Rp. 125.000</p>
-       <p>Rp. 180.000</p>
-       <p>Rp. 129.000</p>
-    </div>
+    </header>
+
+    <main>
+        <section class="banner" id="home">
+            <img src="Images/Banner.png" alt="MEJIWOO fashion collection">
+        </section>
+
+        <section class="section collections" id="collections">
+            <div class="section-heading">
+                <p class="eyebrow">FIND YOUR STYLE</p>
+                <h1>Season Collections</h1>
+                <p class="section-description">
+                    Discover your favorite styles for every season.
+                </p>
+            </div>
+
+            <div class="collection-grid">
+                <article class="collection-card">
+                    <a href="#bestsellers" class="image-link">
+                        <img src="Images/Spring.png" alt="Spring collection" loading="lazy">
+                    </a>
+                    <h2>SPRING</h2>
+                    <a href="#bestsellers" class="more-btn">MORE <span>→</span></a>
+                </article>
+
+                <article class="collection-card">
+                    <a href="#bestsellers" class="image-link">
+                        <img src="Images/Summer.png" alt="Summer collection" loading="lazy">
+                    </a>
+                    <h2>SUMMER</h2>
+                    <a href="#bestsellers" class="more-btn">MORE <span>→</span></a>
+                </article>
+
+                <article class="collection-card">
+                    <a href="#bestsellers" class="image-link">
+                        <img src="Images/winter.png" alt="Winter collection" loading="lazy">
+                    </a>
+                    <h2>WINTER</h2>
+                    <a href="#bestsellers" class="more-btn">MORE <span>→</span></a>
+                </article>
+            </div>
+        </section>
+
+        <section class="section bestsellers" id="bestsellers">
+            <div class="section-heading">
+                <p class="eyebrow">OUR FAVORITES</p>
+                <h1>Our Best Sellers</h1>
+                <p class="section-description">
+                    Timeless pieces you'll love to wear.
+                </p>
+            </div>
+
+            <div class="product-grid" id="products">
+                <article class="product-card">
+                    <a href="#products" class="product-image">
+                        <img src="Images/product_01.png" alt="Euphoria Crop Blouse" loading="lazy">
+                    </a>
+                    <div class="product-info">
+                        <h2>Euphoria Crop Blouse</h2>
+                        <p class="price">Rp. 125.000</p>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <a href="#products" class="product-image">
+                        <img src="Images/product_02.png" alt="Venus Halter Dress" loading="lazy">
+                    </a>
+                    <div class="product-info">
+                        <h2>Venus Halter Dress</h2>
+                        <p class="price">Rp. 180.000</p>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <a href="#products" class="product-image">
+                        <img src="Images/winter.png" alt="Snap Pure Blouse" loading="lazy">
+                    </a>
+                    <div class="product-info">
+                        <h2>Snap Pure Blouse</h2>
+                        <p class="price">Rp. 129.000</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <a href="#home" class="footer-logo">MEJIWOO</a>
+        <p>Discover your style. Wear your confidence.</p>
+        <p class="copyright">© 2026 MEJIWOO. All rights reserved.</p>
+    </footer>
+
 </body>
 </html>
